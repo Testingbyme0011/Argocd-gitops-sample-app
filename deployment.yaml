@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-k8s
+  name: hello-k8s-deploy
   labels:
     app: hello-k8s
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-k8s
-        image: nginxdemos/hello:plain-text
+        image: 91197/nginx:1.0
         ports:
         - containerPort: 80
