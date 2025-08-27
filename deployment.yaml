@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-k8s
-        image: 91197/nginx:1.0
+        image: nginx
         ports:
         - containerPort: 80
